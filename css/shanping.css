@@ -1,0 +1,60 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    background:#F7E9E9 ;
+}
+.one{
+    width: 100%;
+    height: 100%;
+}
+.letter, .letter1{
+    margin-top: 0.5rem;
+    font-size: 0.44rem;
+    color:#B6858F ;
+    margin-left: 1rem;
+}
+.letter span{
+    font-size: 1rem;
+    color: #7A2839;
+}
+.one .image{
+    margin-top: -3.5rem;
+}
+.letter1{
+    margin-top: 0.3rem;
+    margin-left: 3.5rem;
+}
+.tree{
+    background: #FDEFE6;
+    padding-top:0.5rem;
+    position: relative;
+}
+.tree .letter{
+    color: #BD978F;
+    margin-top: 0;
+}
+.tree .letter1 span{
+    color: #6F2827;
+    font-size: 0.5rem;
+}
+.tree .image{
+    margin-top: -3.5rem;
+}
+.tree a{
+    display:block;
+    width: 100%;
+    height:1rem;
+    z-index: 999;
+    position: absolute;
+    top:9.5rem;
+}

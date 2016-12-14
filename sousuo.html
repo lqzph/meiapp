@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/sousuo.css">
+    <script src="js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<div id="header" class="header">
+    <a href="home.html" class="sou iconfont icon-fanhui"></a>
+   <div class="head">
+       <span  class="sou iconfont icon-sousuo"></span>
+       <span>化妆品</span>
+       <span>用户</span>
+       <span>美妆</span>
+   </div>
+    <a href="#">搜索</a>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+      <div class="dajia">
+         <span>
+             大家爱搜
+        </span>
+     </div>
+        <div class="neirong">
+            <span>润唇膏</span>
+            <span>眼霜</span>
+            <span>身体乳</span>
+            <span>面膜</span>
+            <span>乳液</span>
+            <span>控油</span>
+            <span class="ac">保湿</span>
+            <span class="ac">十二月</span>
+            <span>精华油</span>
+            <span>化妆水</span>
+            <span>粉底液</span>
+            <span>祛痘</span>
+            <span>瘦身</span>
+            <span>面膜</span>
+            <span>彩妆盒</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript" language="javascript">
+    function size(origins,type) {
+        var type=type||"x"
+        var widths=document.documentElement.clientWidth;
+        var height=document.documentElement.clientHeight;
+        if(type=="x"){
+            var bili=widths/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }else if(type=="y"){
+            var bili=height/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }
+    }
+    size(750);
+    var mySwiper = new Swiper('.swiper-container',{
+        slidesPerView : 4.5,
+    })
+    var mySwiper = new Swiper('.swiper-container1',{
+        slidesPerView:4,
+    })
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    }
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</html>

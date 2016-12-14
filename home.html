@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/swiper.min.js"> </script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+</head>
+
+<body onload="loaded()">
+<div class="home">
+    <header>
+        <div class="header" id="header">
+            <a href="sousuo.html" class="sou iconfont icon-sousuo"></a>
+            <a href="#">晒好货</a>
+            <a href="#">学化妆</a>
+            <a href="#">关注</a>
+            <a href="login.html" class="deng iconfont icon-xiangji"></a>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="scroller">
+    <!--banner-->
+
+    <div class="div banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--meila-->
+    <div class="mei">
+        <div class="meila"><span>♥</span>&nbsp;&nbsp;美啦专题&nbsp;&nbsp;<span>♥</span></div>
+        <div class="imgbox">
+            <div class="swiper-container1" id="swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei1%20(1).png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei1%20(1).png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="show.html">
+                            <img src="img/mei1%20(1).png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="guanzhu">
+        <div class="title">
+            <div class="photo"></div>
+            <div>EvaNA</div>
+            <a href="show.html">关注他</a>
+        </div>
+        <div class="img">
+            <img src="img/img.png" alt="">
+        </div>
+        <div class="jieshao">
+            <a href="show.html">【十一月晒单】果达儿角质焕颜双效柔肤水让老化角质无处可逃</a>
+            <p>北京的天气越来越差，因为雾霾各种肌肤问题也接踵而至</p>
+        </div>
+        <div class="zan">
+            <a href="show.html"><span class="iconfont icon-liuyan"></span> <span>18</span></a>
+            <a href="show.html"><span class="iconfont icon-aixin"></span> <span>175</span></a>
+        </div>
+        <div class="hui"></div>
+    </div>
+    <div class="guanzhu">
+        <div class="title">
+            <div class="photo"></div>
+            <div>EvaNA</div>
+            <a href="show.html">关注他</a>
+        </div>
+        <div class="img">
+            <img src="img/img.png" alt="">
+        </div>
+        <div class="jieshao">
+            <a href="show.html">【十一月晒单】果达儿角质焕颜双效柔肤水让老化角质无处可逃</a>
+            <p>北京的天气越来越差，因为雾霾各种肌肤问题也接踵而至</p>
+        </div>
+        <div class="zan">
+            <a href="show.html"><span class="iconfont icon-liuyan"></span> <span>18</span></a>
+            <a href="show.html"><span class="iconfont icon-aixin"></span> <span>175</span></a>
+        </div>
+        <div class="hui"></div>
+    </div>
+    </div>
+            </div>
+        </div>
+    <!--footer-->
+    <div id="footer">
+        <a href="home.html"> <span class="iconfont icon-zhuye"></span><span>变美la</span></a>
+        <a href="paihang.html"> <span class="iconfont icon-paixingbang1"></span><span>排行榜</span></a>
+        <a href="liebiao.html"> <span class="iconfont icon-gouwuzhuanhuan"></span><span>全球购</span></a>
+        <a href="login.html"> <span class="iconfont icon-icon-copy"></span><span>我的</span></a>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript" language="javascript">
+    function size(origins,type) {
+        var type=type||"x"
+        var widths=document.documentElement.clientWidth;
+        var height=document.documentElement.clientHeight;
+        if(type=="x"){
+            var bili=widths/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }else if(type=="y"){
+            var bili=height/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }
+    }
+    size(750);
+    var mySwiper = new Swiper ('.swiper-container', {
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        autoplay:3000,
+        loop:true,
+    })
+    var mySwiper = new Swiper('#swiper-container1',{
+        slidesPerView : 2.5,
+    })
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    }
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+
+</script>
+</html>
