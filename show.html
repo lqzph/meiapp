@@ -5,15 +5,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/show.css">
     <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/iscroll.js"></script>
 </head>
-<body>
+<body onload="loaded()">
 <header>
-    <div class="head">
-        <span class="iconfont icon-fanhui"><a href="home.html"></a></span>
+    <div class="head" id="header">
+        <a href="home.html"class="iconfont icon-fanhui"></a>
         <span class="iconfont icon-xihuan"></span>
         <span class="iconfont icon-fenxiang"></span>
     </div>
 </header>
+<div id="wrapper">
+    <div id="scroller">
 <div class="con">
     <img src="img/33_02.png" alt="">
     <p>种草狂：国货不只有大宝 这些也好用到逆天 <br>
@@ -26,8 +29,10 @@
 
     </p>
 </div>
+        </div>
+    </div>
 </body>
-<script>
+<script  type="text/javascript" language="javascript">
     function size(origins,type) {
         var type=type||"x"
         var widths=document.documentElement.clientWidth;
@@ -41,5 +46,12 @@
         }
     }
     size(750);
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true,click:true });
+    }
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 </script>
 </html>

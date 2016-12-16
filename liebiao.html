@@ -132,7 +132,7 @@
         <a href="login.html"> <span class="iconfont icon-icon-copy"></span><span>我的</span></a>
     </footer>
 
-</body>
+</body >
 <script type="text/javascript" language="javascript">
     function size(origins,type) {
         var type=type||"x"
@@ -153,7 +153,7 @@
     var myScroll;
 
     function loaded () {
-        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+        myScroll = new IScroll('#wrapper', { mouseWheel: true,click:true });
     }
 
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);

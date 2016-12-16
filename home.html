@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" >
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
     <title>首页</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -11,6 +16,20 @@
     <script src="js/swiper.min.js"> </script>
     <script src="js/iscroll.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
+    <style>
+        a{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        input{
+            -webkit-appearance: none;
+        }
+        body{
+            font-family:Helvetica;
+            -webkit-text-size-adjust:100%;
+            -webkit-user-select:none
+        }
+
+    </style>
 </head>
 
 <body onload="loaded()">
@@ -28,33 +47,33 @@
     <div id="wrapper">
         <div id="scroller">
     <!--banner-->
-
     <div class="div banner">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/banner1.png" alt="">
+                    <a href="show.html"> <img src="img/banner1.png" alt=""></a>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner1.png" alt="">
+                    <a href="show.html"> <img src="img/banner1.png" alt=""></a>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner1.png" alt="">
+                    <a href="show.html"> <img src="img/banner1.png" alt=""></a>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner1.png" alt="">
+                    <a href="show.html"> <img src="img/banner1.png" alt=""></a>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner1.png" alt="">
+                    <a href="show.html"> <img src="img/banner1.png" alt=""></a>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--meila-->
     <div class="mei">
         <div class="meila"><span>♥</span>&nbsp;&nbsp;美啦专题&nbsp;&nbsp;<span>♥</span></div>
@@ -62,7 +81,7 @@
             <div class="swiper-container1" id="swiper-container1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="show.html">
+                        <a href="show.html" >
                             <img src="img/mei2.png" alt="">
                         </a>
                     </div>
@@ -98,7 +117,7 @@
         <div class="title">
             <div class="photo"></div>
             <div>EvaNA</div>
-            <a href="show.html">关注他</a>
+            <a href="geren.html">关注他</a>
         </div>
         <div class="img">
             <img src="img/img.png" alt="">
@@ -117,7 +136,7 @@
         <div class="title">
             <div class="photo"></div>
             <div>EvaNA</div>
-            <a href="show.html">关注他</a>
+            <a href="geren.html">关注他</a>
         </div>
         <div class="img">
             <img src="img/img.png" alt="">
@@ -172,7 +191,7 @@
     var myScroll;
 
     function loaded () {
-        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+        myScroll = new IScroll('#wrapper', { mouseWheel: true ,click:true});
     }
 
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);

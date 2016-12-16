@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人</title>
+    <link rel="stylesheet" href="css/geren.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/iscroll.js"></script>
+</head>
+<body  onload="loaded()">
+
+    <div  id="header">
+        <a href="home.html" class="iconfont icon-fanhui fan"></a>
+    </div>
+    <div id="wrapper">
+        <div id="scroller">
+    <div class="header">
+    <div></div>
+    <div class="ta">
+        <a href="">与TA聊</a>
+        <a href="">关注TA</a>
+    </div>
+</div>
+
+<div class="guanzhu1">
+    <div class="title1">
+        ♥&nbsp;&nbsp;我的话题&nbsp;&nbsp;♥
+    </div>
+    <div class="img1">
+        <a href="show.html"><img src="img/Screenshot_20161215-091741_04.png" alt=""></a>
+    </div>
+    <div class="jieshao1">
+        <a href="show.html">【十一月晒单】果达儿角质焕颜双效柔肤水让老化角质无处可逃</a>
+        <p>北京的天气越来越差，因为雾霾各种肌肤问题也接踵而至</p>
+    </div>
+    <div class="zan1">
+        <a href="show.html"><span class="iconfont icon-liuyan"></span> <span>18</span></a>
+        <a href="show.html"><span class="iconfont icon-aixin"></span> <span>175</span></a>
+    </div>
+    <div class="hui1"></div>
+</div>
+<div class="guanzhu1">
+    <div class="img1">
+        <a href="show.html"><img src="img/Screenshot_20161215-091741_04.png" alt=""></a>
+    </div>
+    <div class="jieshao1">
+        <a href="show.html">怎么办：年底加班忙不停 熬夜眼睛浮肿要这样解决</a>
+        <p>北京的天气越来越差，因为雾霾各种肌肤问题也接踵而至</p>
+    </div>
+    <div class="zan1">
+        <a href="show.html"><span class="iconfont icon-liuyan"></span> <span>18</span></a>
+        <a href="show.html"><span class="iconfont icon-aixin"></span> <span>175</span></a>
+    </div>
+    <div class="hui1"></div>
+</div>
+</div>
+    </div>
+</body>
+<script type="text/javascript" language="javascript">
+    function size(origins,type) {
+        var type=type||"x"
+        var widths=document.documentElement.clientWidth;
+        var height=document.documentElement.clientHeight;
+        if(type=="x"){
+            var bili=widths/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }else if(type=="y"){
+            var bili=height/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+        }
+    }
+    size(750);
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true,click:true });
+    }
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+</html>
