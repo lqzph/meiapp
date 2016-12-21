@@ -3,6 +3,7 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .login{
     width: 100%;
@@ -28,16 +29,15 @@ header .head span{
     line-height: 0.6rem;
     font-size: 0.3rem;
     color: #fff;
-    margin-left: 0.2rem;
-}
-header .head  a{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-header .head span:nth-child(2){
     margin-left: 0.4rem;
 }
+header .head a{
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    color: #fff;
+    margin-left: 0.2rem;
+}
+
 .con{
     width: 100%;
     height: auto;
@@ -102,7 +102,7 @@ margin-top: 0.3rem;
     justify-content: space-between;
     position: absolute;
     left:0;
-    top:7.5rem;
+    top:4.5rem;
     font-size: 0.3rem;
 }
 .tiaozhuan span{
